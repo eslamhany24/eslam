@@ -1,0 +1,1281 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+width: 85%;
+margin: auto; 
+}
+
+
+.title2{
+    text-align: center;
+    margin-top: 10%;
+    }
+    .title2 h1{
+    font-size: 30px;
+    color:  darkcyan;
+    text-transform: uppercase;
+    
+    }
+    .title2 .line{
+        display: inline-block;
+    width: 15%;
+    height: 5px;
+    background-color: red;
+    border-radius: 50%;
+    
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: darkcyan;
+     position: fixed;
+     z-index: 10;
+     
+}
+.logo img{
+width: 70px;
+height: 50px;
+margin-top: 5px;
+float: left;
+}
+.nav{
+    float: right;
+}
+.nav li{
+display: inline-block;
+margin-right: 100px;
+position: relative;
+padding: 18px 20px ;
+transition: 1s;
+}
+.nav li:hover{
+    background-color: rgb(56, 165, 165);
+
+}
+
+.nav li a{
+   text-decoration: none;
+   color: bisque;
+   height: 100%;
+   font-size: 20px;
+}
+.nav li::after{
+content: "";
+position: absolute;
+bottom: 0;
+left: 0;
+width: 0;
+height: 2px;
+background-color: red;
+transition: 1s;
+
+}
+.nav li:hover:after{
+width: 100%;
+
+}
+
+
+
+.home{
+width: 100%;
+height: 100vh;
+background-image: url(../Divices/R.jpeg);
+background-size: cover;
+position: relative;
+}
+.home-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.home-title span{
+    color: white;
+}
+
+.home-title h1{
+color: red;
+font-size: 70px;
+text-transform: uppercase;
+}
+.home-title p{
+color: white;
+margin: 20px;
+font-size: 20px;
+line-height: 25px;
+}
+.btn{
+width: 30%;
+padding: 10px;
+border-radius: 10px;
+border: none;
+text-transform: capitalize;
+}
+
+.learn{
+background-color: darkcyan;
+color: white;
+}
+.btn:hover{
+    opacity: 0.7;
+}
+
+
+
+
+
+
+/***************************** start page 2
+*****************************/
+
+
+.parent{
+margin: 5% 0 10% 0;
+height: 350px;
+background-color: rgba(0,0,0,0.5);
+padding: 50px;
+border-left: 4px solid rgb(27, 194, 223);
+border-right: 4px solid rgb(27, 194, 223);
+position: relative;
+}
+.parent::after{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 0;
+height: 100%;
+transition: 3s;
+background-color: rgb(30, 107, 107);
+opacity: 0.5;
+
+}
+.parent:hover:after{
+width: 100%;
+}
+
+.parent::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    transition: 3s;
+    background-color: rgb(32, 206, 206);
+    opacity: 0.5;
+    
+    }
+    .parent:hover::before{
+    width: 100%;
+    }
+    
+
+
+.parent-contant .item{
+    width: 30%;
+    float: left;
+    background-image: url(../Divices/serivices.jpeg);
+    padding: 20px;
+    color: white;
+    background-size: 100% 100%;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    position: relative;
+    border-radius: 5px;
+    }
+    .lt{
+    margin: 0 5% ;
+    }
+    .item::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0,0,0,0.9);
+    transition: 3s;
+    z-index: -1;
+    }
+    .item:hover:after{
+    height: 100%;
+    
+    
+    }
+    
+    
+    
+    .parent-contant .fa-solid{
+    font-size: 30px;
+    
+    
+    }
+    
+    .parent-contant h2{
+    font-size: 35px;
+    margin: 15px 0;
+    
+    }
+    .parent-contant p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    
+    }
+    .parent-contant a{
+    color: red;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    }
+    .item span{
+    position: absolute;
+    bottom:-35px;
+    left: 46%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    
+    }
+    
+    /***************************** end page 2
+    *****************************/
+    
+
+
+
+
+
+
+    
+/***************************** start page 3
+*****************************/
+.car-info{
+position: relative;
+width: 30%;
+
+display: inline-block;
+margin-top: 7%;
+
+
+}
+
+.ltr{
+margin: 7% 5% 0 4%;
+
+}
+
+.car-info .car-lay{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0,0,0,0.4);
+opacity: 0;
+border-radius: 15px;
+z-index: 2;
+
+
+
+}
+
+.car-info:hover .car-lay{
+opacity: 1;
+transition: 2s;
+}
+
+
+.car-color{
+color: white;
+
+
+}
+
+
+
+
+
+.car-info{
+position: relative;
+}
+
+
+
+
+.car-info .carcel{
+position: absolute;
+top: 10px;
+left: 10px;
+
+width: 35px;
+height: 35px;
+
+border-radius: 50%;
+border: 1px solid darkcyan;
+padding: 4px;
+z-index: 50;
+
+}
+
+.carcel i{
+font-size: 25px;
+text-align: center;
+display: block;
+cursor: pointer;
+color: red;
+}
+
+.fa-heart:hover{
+color: white;
+
+}
+
+
+.car-info .fa-heart::after{
+    color: aqua;
+}
+
+.car-info span{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 60px;
+    height: 25px;
+    border-radius: 50px;
+    border: 1px solid darkcyan;
+    padding: 4px;
+    text-align: center;
+    background-color: darkcyan;
+    color: white;
+z-index: 5;
+
+
+    }
+.car-info img{
+width: 306px;
+height: 200px;
+
+}
+
+.car-lay{
+text-align: center;
+padding-top: 50px;
+font-weight: bold;
+}
+.car-lay h2{
+
+color: white;
+background-color: red;
+width: 60%;
+border-radius: 10px;
+margin:20px auto;
+
+}
+.car-lay p{
+color: aqua;
+margin-bottom: 10px;
+}
+.car-lay .icon{
+font-size: 20px;
+color: white;
+}
+
+/***************************** end page 3
+*****************************/
+
+
+
+
+/***************************** start page 4
+*****************************/
+
+
+.information-titel{
+width: 30%;
+height: 150px;
+background-color: #eee;
+display: inline-block;
+margin-top: 8%;
+border-top: 3px solid #007afd;
+padding: 20px 15px 20px 65px;
+position: relative;
+z-index: 5;
+
+}
+
+.btm-color{
+position: relative;
+
+}
+
+ .btm-color::after{
+content: "";
+ position: absolute;
+top: 0;
+left: 0;
+width: 0;
+height: 0;
+background-color: #000000;
+transition: 2s;
+border-bottom: 3px solid #007afd;
+z-index: -1;
+
+}
+
+ .btm-color:hover::after{
+width: 100%;
+height: 100%;
+
+}
+
+
+
+
+
+.mtl{
+margin: 0 4.6%;
+
+}
+
+.information-titel i{
+position: absolute;
+top: 20px;
+left: 20px;
+font-size: 30px;
+color: #007afd;
+
+}
+
+.information-titel p{
+margin-top: 15px;
+line-height: 22px;
+font-weight: bold;
+color: gray;
+}
+.information-titel:hover h2,
+.information-titel:hover p{
+color: white;
+transition: 3s;
+}
+
+
+
+
+/***************************** end page 4
+*****************************/
+
+
+
+
+
+
+
+
+
+/*********************************************** start page 5 ***********************************************/
+.service{
+    background-color: rgba(233, 229, 229, 0.86);
+    height: 80vh;
+    width: 100%;
+    margin-top: 10%;
+    overflow: hidden;
+    font-weight: bold;
+    }
+    
+    /******** start Service-item ********/
+    .Service-item{
+    width: 50%;
+    float: left;
+    margin-top: 5%;
+    }
+    
+    .Service-item h2{
+    text-align: left;
+    font-size: 30px;
+    text-transform: capitalize;
+    }
+    
+    .Service-item .line1{
+display: block;
+width: 30%;
+height: 5px;
+background-color: #007afd;
+border-radius: 50%;
+
+    }
+
+
+
+    .Service-desk{
+    margin: 40px 0 15px;
+    }
+    
+    .Service-desk span{
+    font-size: 30px;
+    color: #3a7afc;
+    }
+    /******** end Service-item ********/
+    
+    /******** start Service-list ********/
+    .Service-list i{
+    margin: 15px 8px 0 0;     
+    }
+            
+    .Service-list{
+    text-transform: capitalize;
+    list-style: none;
+    width: 100%;        
+    }
+            
+    .Service-list li i{
+    width: 20px;
+    height: 20px;
+    color: white;
+    background-color: #3a7afc;
+    font-size: 13px;
+    border-radius: 50%;
+    padding: 4px;      
+    }
+    /******** end Service-list ********/
+    
+    /******** start Service-list & service-bollets  ********/
+    .service-center{
+    margin-left: 30%;
+    }         
+    
+    .Service-item img{
+    margin-left: 40%;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 6px solid ;
+    border-color: #6195ff red goldenrod mediumblue;
+    outline: 6px solid black;
+    }
+               
+    .service-bollets{
+    list-style: none; 
+    text-align: right; 
+    margin-left: 15%;   
+    width: 100%; 
+    }
+                                           
+    .service-bollets li{
+    width: 15px;
+    height: 15px;
+    background-color: #b7b1b1;
+    display: inline-block;
+    border-radius: 50%;
+     margin: 10px 5px;                                      
+    }
+    
+    .service-bollets .activ{
+    background-color: #3a7afc;
+    }
+           
+    .service-bollets li:hover{
+    background-color: #3a7afc;
+    cursor: pointer;
+    transition: 0.5s;
+    }
+    /******** end Service-list & service-bollets  ********/
+    /*********************************************** end page 5 ***********************************************/
+    
+    /*********************************************** start page 6 ***********************************************/
+    .background{
+    background-image: url(Divices/bmw-m-series-seo-overview-ms-05.jpg); 
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5% 0 10%;
+    background-attachment: fixed;
+    background-position:  0, 5px; 
+    }
+        
+    .background .overlay{
+    background-color: rgba(0,0,0,0.5);
+    }
+        
+    .background-chaps{
+    text-align: center;
+    }
+        
+    .background i{
+    font-size: 50px;
+    color: #3a7afc;
+    margin-bottom: 15px;
+    }
+    
+    .background i:hover{
+    color: red;
+    transition: 0.5s;
+            }
+    
+    .background-item{
+    float: left;
+    margin-left: 15%;
+    margin-top: 150px;
+    }
+        
+    .background-item h1{
+    color: white;
+    margin-bottom: 15px;
+    }
+        
+    .background-item p{
+    color: white;
+    font-size: 17px;
+    }
+    /*********************************************** end page 6 ***********************************************/
+        
+    /*********************************************** start page 7 ***********************************************/
+    .pricin .line{
+    width: 10%;
+    }
+        
+    .pricin{
+    width: 100%;
+    }
+        
+    .pricin-poto{
+    width: 100%;
+    height: 65vh;   
+    margin: 5% 0;   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+    }
+        
+    .pricin-contant{
+    width: 100%;
+    font-weight: bold;
+    }
+    
+    .pricin-item{
+    width: 25%;
+    height: 400px;
+    float: left;
+    text-align: center;
+    margin: 5% 0 0 8%;
+    border-bottom: 3px solid #6195ff;
+    background-size: cover;
+    position: relative;
+    }
+        
+    .pricin-item::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0,0.9 );
+    transition: 2s;
+    }
+    
+    .pricin-item:hover::after{
+    width: 100%;
+    height: 100%;
+    }
+    
+    .princ-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    }
+         
+    .ltr{
+    margin: 5% -3% 0 5%;
+    }
+        
+    .pricin-title{     
+    font-weight: bold;
+    font-size: 25px;
+    margin: 25px 0;
+    text-transform: uppercase;
+    color: gold;  
+    }
+        
+    .pricin-item img{
+    width: 100%;
+    height: 100%;
+    }
+    
+    .pricin-border{
+    width: 100px;
+    height: 100px;
+    border: 3px solid ;
+    border-color: white #0069fd white #0069fd;
+    padding: 20px;
+    border-radius: 50%;
+    margin: auto;
+    color: white;
+    }
+        
+    .pricin-item ul{
+    list-style: none;
+    margin: 20px 0 30px 0;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: rgb(255 255 255);  
+    }
+    
+    .pricin-item:hover ul{
+    color: gold;
+    transition: 4s;
+    }
+    
+    .pricin-item button{
+    width: 50%;
+    padding: 15px;
+    background-color: #3a7afc;
+    border: 1px solid #00fff268;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 1s; 
+    }
+    
+    .pricin-item button:hover{
+    border-radius: 50px;
+    width: 80%;
+    background-color: #C1F6B0;
+    color: black;
+    }
+    
+    /*********************************************** end page 7 ***********************************************/
+      
+    /*********************************************** start page 8 ***********************************************/
+    .prices{
+    width: 100%;
+    height: 60vh;
+    background-image: url(../Divices/66879e600a0e0ac9729c04a7f065859d.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    } 
+    /******** start prices-item ********/
+    .prices-item{
+    width: 50%;
+    float: left;
+    transform: translate(0, 50%);
+    position: relative;
+    margin-top: 8%;
+    }
+       
+    .prices-item h1,
+    .prices-item p{
+    color: white;
+    width: 75%;
+    }
+       
+    .prices-item h3{
+    color: #3a7afc;
+    text-transform: uppercase;
+    margin-top: 10px;
+    } 
+       
+    .prices-item img{
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    left: 80px;
+    width: 100px;
+    height: 100px;
+     border: 2px solid red;
+    }
+    
+    .prices-item p{
+    margin-top: 20px;
+    }
+    
+    .prices-title{
+    margin-left: 33%;
+    }
+    /******** end prices-item ********/
+    /*********************************************** end page 8 ***********************************************/
+        
+    /*********************************************** start page 9 ***********************************************/
+    .processor{
+    width: 100%;
+    height: 85vh;
+    background-color: #f3f3f3;
+    margin: 5% 0;
+    overflow: hidden;
+    }
+    
+    .processor-item{
+    display: inline-block;
+    width: 30%;
+    background-color: #64717ce8;
+    padding: 14px 14px;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    margin-top: 5%;
+    }
+    
+    .ptr{
+    margin: 0 4.5%;
+    }
+    
+    .processor-img{
+    position: relative;
+    z-index: 5;
+    }
+    
+    .processor-img img{
+    width: 100%;
+    height: 250px;
+    }
+    
+    .processor-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+     background-color: rgba(0, 0, 0,0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: 2s;
+    z-index: 5; 
+    }
+    
+    .processor-item:hover .processor-overlay{
+    opacity: 1;
+    visibility: visible;
+    }
+    
+    .btts-color::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgb(37, 72, 99);
+    transition: 2s;
+    border-radius: 10px;
+    opacity: 0.5;
+    }
+    
+    .btts-color:hover:after{
+    width: 100%;
+    height: 100%;
+    }
+    
+    .btts-color::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color:rgba(0, 0, 0,0.6);
+    transition: 2s;
+    border-radius: 10px;
+    }
+        
+    .btts-color:hover::before{
+    width: 100%;
+    height: 100%; 
+    }
+    
+    .processor-overlay a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #3a7afc;
+    color: white;
+    margin-left: auto;
+    font-size: 20px;
+    border-radius: 50%;
+    margin-top: 7px;
+    margin-right: 5px;
+    }
+    
+    .processor-overlay a i{
+    line-height: 40px;
+    }
+    
+    .processor-text{
+    color: white;
+    padding: 5px;
+    z-index: 100;
+    }
+    
+    .processor-test h2{
+    text-transform: capitalize;
+    padding: 6px;
+    color: white;
+    }
+    
+    .processor-item:hover .processor-test h2{
+      color: gold;
+      transition: 3s;
+    }
+    
+    .processor-test p{
+    color: rgb(120, 238, 238);
+    text-transform: uppercase;
+    } 
+    /*********************************************** end page 9 ***********************************************/
+    
+    /*********************************************** start page 10 ***********************************************/
+    .perant-item{
+    width: 30%;
+    height: 500px;
+    display: inline-block;
+    margin: 5% 0;
+    padding: 15px;
+    border-top: 4px solid rebeccapurple;
+    border-bottom: 4px solid rebeccapurple;
+    position: relative;
+    }
+    
+    .perant-item::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: 2s;
+    background-color: rgba(92, 190, 251, 0.5);
+    opacity: 0.5;
+    z-index: -1;
+    }
+    
+    .perant-item:hover::before{
+    width: 100%;
+    height: 100%;
+    }
+    
+    .perant-img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    }
+    
+    .mkl{
+    margin: 0 4.5%;
+    }
+    
+    .list li{
+    list-style: none;
+    display: inline-block;
+    margin: 40px 0 30px 0;
+    }
+    
+    .list li i{
+    color: #3a7afc;
+    }
+    
+    .perant-item h3{
+    text-transform: capitalize;
+    color: mediumblue;
+    }
+    
+    .perant-item p{
+    margin: 20px 0;
+    }
+    
+    .perant-item a{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #0069fd;
+    z-index: 5;
+    }
+    
+    .perant-item a:hover{
+        color: red;
+    }
+    /*********************************************** end page 10 ***********************************************/
+    
+    /*********************************************** start page 11 ***********************************************/
+    .info{
+    text-align: center;
+    }
+    
+    .info-contant{
+    margin: 5% 0;
+    width: 33%;
+    display: inline-block;
+    }
+    
+    .info-contant h2{
+    margin: 10px 0;
+    }
+    
+    .info-contant i{
+    font-size: 30px;
+    color: #6195ff;
+    }
+    /*********************************************** end page 11 ***********************************************/
+    
+    /*********************************************** start page 12 ***********************************************/
+    .touch .container{
+    width: 60%;
+    margin: auto;
+    }
+    
+    .touch-info{
+    text-align: center;
+    }
+    
+    .touch-info input{
+    width: 47%;
+    height: 50px;
+    /* margin: 0 20px 20px 0; */
+    text-transform: capitalize;
+    padding: 10px;
+    background-color: #eaeaea;
+    border: 1px solid #eaeaea;
+    /* outline: #6195ff; */
+    }
+    
+    .touch-titel{
+    text-align: center;
+    }
+    
+    .touch-titel input{
+    width: 94.7%;
+    margin-top: 15px;
+    height: 50px;
+    /* margin: 0 20px 20px 0; */
+    text-transform: capitalize;
+    padding: 10px;
+    background-color: #eaeaea;
+    border: 1px solid #eaeaea;
+    /* outline: #6195ff; */
+    }
+    
+    .touch .seand{
+    margin: 20px 0 10% 0;
+    text-align: center;
+    }
+    
+    .touch .seand input{
+    padding: 15px;
+    width: 30%;
+    background-color: #6195ff;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #6195ff;
+    }
+    /*********************************************** end page 12 ***********************************************/
+    
+    /*********************************************** start page 13 ***********************************************/
+    .footer{
+    height: 320px;
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    background-color: rgb(37, 72, 99);
+    }
+    
+    .footer-img img{
+    width: 150px;
+    height: 150px;
+    }
+    
+    .footer-contant a i{
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #6195ff;
+    border-radius: 50%;
+    line-height: 50px;
+    margin-left: 15px;
+    display: inline-block;
+    position: relative;
+    }
+    
+    .footer-contant a i::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: 1s;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    }
+    
+    .footer-contant a i:hover::after{
+    width: 48px;
+    height: 48px;
+    opacity: 1;
+    }
+    
+    .footer h3{
+    margin-top: 30px;
+    }
+    /*********************************************** end page 13 ***********************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
